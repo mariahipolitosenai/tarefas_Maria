@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+</head>
+<body>
+    <h1>Suas tarefas</h1>;
+    
+    <!--CRIAMOS O ARRAY E DEFINIMOS AS TAREFAS-->
+    <script>
+        let minhaAgenda = [
+            "8h-Estudar\n",
+            "6h-Acordar\n",
+            "7h-Ir para escola\n", 
+            "9h-Tarefa de Física\n",
+            "10h-Ir para casa\n",
+            "11h-Almoçar\n",
+            "12h-Arrumar a casa\n"];
+        console.log(`Suas tarefas são:\n ${minhaAgenda}`);
+
+        //ATRIBUTO PARA SABER A QUANTIDADE DE TAREFAS QUE TEMOS
+        minhaAgenda.length
+        console.log(`Você tem ${minhaAgenda.length} tarefas pendentes.`);
+
+
+        //ATRIBUTO UTILIZADO PARA ADICIONAR TAREFA 
+        minhaAgenda.push("13h-Estudar para prova de inglês\n");
+        console.log(`Você tem uma tarefa urgente as 13hrs.Agenda atualizada:\n${minhaAgenda}`);
+
+
+         //ATRIBUTO UTILIZADO PARA COLOCAR AS TAREFAS EM ORDEM CRESCENTE
+        minhaAgenda.sort();
+        console.log(`Suas tarefas em ordem crescente:\n ${minhaAgenda}`);
+
+
+        //REMOVI O PRIMEIRO ITEM DA LISTA ORGANIZADA EM ORDEM CRESCENTE
+        minhaAgenda.shift("10h-Ir para casa");
+        console.log(`Eba você já fez uma das suas tarefas! Agenda atualizada: ${minhaAgenda}`);
+
+        //DESISTIR SA ÚLTIMA TAREFA
+        minhaAgenda.pop("9h-Tarefa de Física");
+        console.log(`Ah que pena que você desistiu da sua última tarefa, espero que amanhã você tenha tempo para faze-lá. Agenda atualizada:\n ${minhaAgenda} `);
+
+        //Splice remove a posição e a quantidade de itens. Nesse exemplo removemos 1 item da posição 2.
+        minhaAgenda.splice(2, 1);
+        console.log(`Ah que pena que você desistiu de uma tarefa, espero que amanhã você tenha tempo para faze-lá. Agenda atualizada:\n ${minhaAgenda} `);
+
+        
+        
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
